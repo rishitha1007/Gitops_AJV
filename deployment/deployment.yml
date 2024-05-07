@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ajv
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ajv
+  template:
+    metadata:
+      labels:
+        app: ajv
+    spec:
+      containers:
+      - name: ajv-container
+        image: your/image:latest
+        ports:
+        - containerPort: 80
