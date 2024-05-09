@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: ajv-container
-          image: $REPO_NAME/$IMAGE_NAME:docker-64c237641cadeff2b602a9e9c1ef467323c70afa
+          image: rishithamarri/ajv-docker:docker-aa04cf1f433449a1eb51139c030bc04732caf04a
           ports:
             - containerPort: 80
